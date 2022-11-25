@@ -1,0 +1,741 @@
+Microsoft Windows [Version 10.0.19044.2251]
+(c) Microsoft Corporation. Tüm hakları saklıdır.
+
+C:\Users\pc\Desktop\Github-2.Gun>git init
+Initialized empty Git repository in C:/Users/pc/Desktop/Github-2.Gun/.git/
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ismi onemli degil.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -m"V1"
+[master (root-commit) 8984aec] V1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ismi onemli degil.txt
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+8984aec (HEAD -> master) V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\pc\Desktop\Github-2.Gun>git diff
+diff --git a/ismi onemli degil.txt b/ismi onemli degil.txt
+index f49090d..0217739 100644
+--- a/ismi onemli degil.txt
++++ b/ismi onemli degil.txt
+@@ -1 +1,2 @@
+-2. gun 1. deneme
+\ No newline at end of file
++2. gun 1. deneme
++2. gun 2. deneme
+\ No newline at end of file
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -m"V2"
+[master 9c5bc9a] V2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+9c5bc9a (HEAD -> master) V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git -amend -m"V_2"
+unknown option: -amend
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+9c5bc9a (HEAD -> master) V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -am"V3"
+[master 7c6f1c9] V3
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+7c6f1c9 (HEAD -> master) V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore-
+git: 'restore-' is not a git command. See 'git --help'.
+
+The most similar command is
+        restore
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore --staged
+fatal: you must specify path(s) to restore
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore --staged <file>...
+Sistem belirtilen dosyayı bulamıyor.
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore --staged <ismi onemli degil>...
+Sistem belirtilen dosyayı bulamıyor.
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore --staged .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -m"V4"
+[master 0144321] V4
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+0144321 (HEAD -> master) V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git diff
+diff --git a/ismi onemli degil.txt b/ismi onemli degil.txt
+index a35e78c..01d74d9 100644
+--- a/ismi onemli degil.txt
++++ b/ismi onemli degil.txt
+@@ -1,4 +1,6 @@
+ 2. gun 1. deneme
+ 2. gun 2. deneme
+ 2. gun 3. deneme
+-2. gun 4. deneme
+\ No newline at end of file
++2. gun 4. deneme
++
++2. gun yeni bir sey
+\ No newline at end of file
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore --staged .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git reset --hard
+HEAD is now at 0144321 V4
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git diff
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+0144321 (HEAD -> master) V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout 8984aec
+error: Your local changes to the following files would be overwritten by checkout:
+        ismi onemli degil.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout 8984aec .
+Updated 1 path from d1ef4fe
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+0144321 (HEAD -> master) V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git diff
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ismi onemli degil.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        yeni.txt
+
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -m"V1"
+[master d70606e] V1
+ 2 files changed, 1 insertion(+), 4 deletions(-)
+ create mode 100644 yeni.txt
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+d70606e (HEAD -> master) V1
+0144321 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout 8984aec .
+Updated 0 paths from d1ef4fe
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout 0144321 .
+Updated 1 path from e7f325a
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout 7c6f1c9 .
+Updated 1 path from e57a53b
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+d70606e (HEAD -> master) V1
+0144321 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git reset --hard d70606e
+HEAD is now at d70606e V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+d70606e (HEAD -> master) V1
+0144321 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git reset --hard 7c6f1c9
+HEAD is now at 7c6f1c9 V3
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+7c6f1c9 (HEAD -> master) V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+* master
+  mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>branch checkout mehmet
+'branch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout mehmet
+Switched to branch 'mehmet'
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+* mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+7c6f1c9 (HEAD -> mehmet, master) V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch mehmet
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mehmet.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -am"V4"
+[mehmet 8ab3772] V4
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+8ab3772 (HEAD -> mehmet) V4
+7c6f1c9 (master) V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout 7c6f1c9
+Note: switching to '7c6f1c9'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 7c6f1c9 V3
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout 7c6f1c9 .
+Updated 0 paths from e57a53b
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+7c6f1c9 (HEAD, master) V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+* (HEAD detached at 7c6f1c9)
+  master
+  mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout mehmet
+Previous HEAD position was 7c6f1c9 V3
+Switched to branch 'mehmet'
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+* mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+8ab3772 (HEAD -> mehmet) V4
+7c6f1c9 (master) V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout master
+Switched to branch 'master'
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+* master
+  mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git merge mehmet
+Updating 7c6f1c9..8ab3772
+Fast-forward
+ ismi onemli degil.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+8ab3772 (HEAD -> master, mehmet) V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mehmet.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git add .
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -m"V5"
+[master 7808f29] V5
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 mehmet.txt
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+7808f29 (HEAD -> master) V5
+8ab3772 (mehmet) V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout mehmet
+Switched to branch 'mehmet'
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout master
+Switched to branch 'master'
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout mehmet
+Switched to branch 'mehmet'
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+* mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+8ab3772 (HEAD -> mehmet) V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git merge master
+Updating 8ab3772..7808f29
+Fast-forward
+ ismi onemli degil.txt | 4 +++-
+ mehmet.txt            | 1 +
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 mehmet.txt
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+7808f29 (HEAD -> mehmet, master) V5
+8ab3772 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch mehmet
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+* mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -am"V5"
+[mehmet 6184698] V5
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+6184698 (HEAD -> mehmet) V5
+7808f29 (master) V5
+8ab3772 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout master
+Switched to branch 'master'
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+7808f29 (HEAD -> master) V5
+8ab3772 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git merge mehmet
+Updating 7808f29..6184698
+Fast-forward
+ ismi onemli degil.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+6184698 (HEAD -> master, mehmet) V5
+7808f29 V5
+8ab3772 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch mehmet
+fatal: A branch named 'mehmet' already exists.
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout mehmet
+Switched to branch 'mehmet'
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+* mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch -m memoli
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+* memoli
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch mehmet
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+  mehmet
+* memoli
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+6184698 (HEAD -> memoli, mehmet, master) V5
+7808f29 V5
+8ab3772 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch -d memoli
+error: Cannot delete branch 'memoli' checked out at 'C:/Users/pc/Desktop/Github-2.Gun'
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch -d mehmet
+Deleted branch mehmet (was 6184698).
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+  master
+* memoli
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch memoli
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git commit -am"memoliBV1"
+[memoli da165df] memoliBV1
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+da165df (HEAD -> memoli) memoliBV1
+6184698 (master) V5
+7808f29 V5
+8ab3772 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch memoli
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        ismi onemli degil.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+C:\Users\pc\Desktop\Github-2.Gun>git stash
+Saved working directory and index state WIP on memoli: da165df memoliBV1
+
+C:\Users\pc\Desktop\Github-2.Gun>git stash
+No local changes to save
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch memoli
+nothing to commit, working tree clean
+
+C:\Users\pc\Desktop\Github-2.Gun>git checkout master
+Switched to branch 'master'
+
+C:\Users\pc\Desktop\Github-2.Gun>git branch
+* master
+  memoli
+
+C:\Users\pc\Desktop\Github-2.Gun>git merge memoli
+Updating 6184698..da165df
+Fast-forward
+ ismi onemli degil.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\pc\Desktop\Github-2.Gun>git log --oneline
+da165df (HEAD -> master, memoli) memoliBV1
+6184698 V5
+7808f29 V5
+8ab3772 V4
+7c6f1c9 V3
+9c5bc9a V2
+8984aec V1
+
+C:\Users\pc\Desktop\Github-2.Gun>git stash pop
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ismi onemli degil.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (f6104ba4aee9790a645c8c15b6ac2075819bc8af)
+
+C:\Users\pc\Desktop\Github-2.Gun>git diff
+diff --git a/ismi onemli degil.txt b/ismi onemli degil.txt
+index 49251ce..a818750 100644
+--- a/ismi onemli degil.txt
++++ b/ismi onemli degil.txt
+@@ -8,4 +8,4 @@ master branch'i deneme
+
+ mehmet branch'i 2.deneme
+
+-yeniden merhaba, ben memoli-ilk deneme
+\ No newline at end of file
++yeniden merhaba, ben memoli-ilk deneme.......
+\ No newline at end of file
+
+C:\Users\pc\Desktop\Github-2.Gun>git restore .
+
+C:\Users\pc\Desktop\Github-2.Gun>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\pc\Desktop\Github-2.Gun>
